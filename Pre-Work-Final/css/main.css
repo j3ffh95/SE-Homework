@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: lightblue;
+  text-align: center;
+  font-family: fantasy;
+  position: relative;
+}
+
+header h2 {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 18px;
+}
+
+#main-paragraph {
+  font-family: monospace;
+  font-size: large;
+  font-weight: 800;
+  color: green;
+}
+
+li {
+  font-style: italic;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+nav a {
+  color: purple;
+  background-color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: purple;
+}
+
+.masthead {
+  margin-bottom: 2em;
+  padding: 6em 2em;
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1587143545843-a8f570f2c5f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -300px;
+}
+
+.masthead-intro {
+  /* Layout Declarations */
+  margin-bottom: 0.1em;
+  /* Typography Declarations */
+  color: #ffffff;
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 2em;
+}
+
+.masthead-heading {
+  /* Layout Declarations */
+  margin-top: -0.2em;
+  /* Typography Declarations */
+  color: white;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-shadow: 0px 3px 0px lightblue;
+}
+
+/* Table Style */
+.myTable {
+  margin: 1em auto;
+  width: 80%;
+  overflow: hidden;
+  background: #fff;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167f92;
+}
+
+.myTable th {
+  border: 1px solid #fff;
+  background-color: #167f92;
+  color: #fff;
+  padding: 1rem;
+}
+
+.myTable td {
+  border: 1px solid #d9e4e6;
+  padding: 1rem;
+}
+
+/* Form Style */
+form {
+  border: black solid 2px;
+  padding: 1rem;
+  width: 40%;
+  margin: 1rem auto;
+}
+
+/* Button style */
+.button {
+  padding: 5px 10px;
+  margin: 10px;
+  border: solid transparent 1px;
+  border-radius: 10px;
+  color: lightblue;
+  background-color: navy;
+}
+
+.button:hover {
+  color: navy;
+  background-color: lightblue;
+  border: solid navy 1px;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.1s ease-in;
+}

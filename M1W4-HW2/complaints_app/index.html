@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Complaints app</title>
+    <style>
+      .data-div {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .list-container {
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+      }
+
+      .resolution-description {
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+      }
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="number" name="complaints" id="complaint-num" />
+    <button class="btn" id="manhattan">Manhattan</button>
+    <button class="btn" id="brooklyn">Brooklyn</button>
+    <button class="btn" id="queens">Queens</button>
+    <button class="btn" id="staten island">Staten Island</button>
+    <button class="btn" id="bronx">Bronx</button>
+
+    <div class="data-div"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import DivOne from "./DivOne";
 
 // have it render a div
 // move the h3 to inside the div in this component
-// work on passing the data from state down
-// work on getting the click function work properly
+// work on passing the data from DivOne down
+// work on getting the click function to work properly
 
 class DivTwo extends Component {
   state = {
@@ -35,8 +36,7 @@ class DivTwo extends Component {
     return (
       <div>
         <h3 onClick={() => this.changeIt(this.state.tardis.name)}>
-          {" "}
-          {this.state.tardis.name}{" "}
+          <DivOne />
         </h3>
         {/* <button onClick={() => this.changeMessage()}> Subscribe </button> */}
       </div>

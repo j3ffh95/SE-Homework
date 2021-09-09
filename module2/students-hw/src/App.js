@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Student from "./Student";
 
 function App() {
-  const [students, setStudents] = useState([
+  const [students] = useState([
     {
       name: "Cait Yomorta",
       bio: "nulla minus vitae laboriosam corrupti Delectus inventore explicabo est odit incidunt rem a recusandae ",

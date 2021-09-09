@@ -7,39 +7,23 @@ import React, { Component } from "react";
 
 class Groceries extends Component {
   state = {
-    groceries: [
-      {
-        item: "bread",
-        units: "1 pack",
-        quantity: 2,
-        isPurchased: false,
-      },
-      {
-        item: "ham",
-        units: "2lb",
-        quantity: 1,
-        isPurchased: false,
-      },
-      {
-        item: "soda",
-        units: "2 liters",
-        quantity: 3,
-        isPurchased: false,
-      },
-    ],
-    inputData: "",
+    groceries: [],
+    // inputData: "",
   };
 
   handleAddItem = event => {
-    const newList = [...this.state.groceries, { title: this.state.inputData }];
-    this.setState(newList);
-    console.log(newList);
+    event.preventDefault();
+    this.state.groceries.push({ item: this.state.item });
+    // this.setState({
+    //   inputData: "",
+    // });
+    console.log(this.state.groceries);
   };
 
   handleChange = event => {
     // computed property names
     // inputData = event.target.value
-    this.setState({ inputData: event.target.value });
+    this.setState({ [event.target.id]: event.target.value });
   };
 
   //   handleSubmit = event => {
@@ -68,14 +52,28 @@ class Groceries extends Component {
   render() {
     return (
       <div>
-        <label htmlFor='item'>Item:</label>
-        <input
-          id='item'
-          value={this.state.inputData}
-          onChange={this.handleChange}
-        />
+        <form onSubmit={this.handleAddItem}>
+          <label htmlFor='item'>Item:</label>
+          <input
+            id='item'
+            value={this.state.inputData}
+            onChange={this.handleChange}
+          />
+          <label htmlFor='unit'>Unit:</label>
+          <input
+            id='unit'
+            value={this.state.inputData}
+            onChange={this.handleChange}
+          />
+          <label htmlFor='item'>Item:</label>
+          <input
+            id='item'
+            value={this.state.inputData}
+            onChange={this.handleChange}
+          />
 
-        <button onClick={() => this.handleAddItem()}>Add Item</button>
+          <button>Add Item</button>
+        </form>
 
         {this.state.groceries.map((item, i) => {
           return (

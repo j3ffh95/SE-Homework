@@ -20,6 +20,18 @@ function App() {
     <div className='App'>
       <h1>Todo App</h1>
       <AddTodoForm setTodoItems={setTodoItems} />
+      <ul>
+        {todoItems.map(todo => (
+          <Todo
+            setTodoItems={setTodoItems}
+            id={todo.id}
+            item={todo.item}
+            // species={pet.species}
+            // age={pet.age}
+            // key={pet.id}
+          />
+        ))}
+      </ul>
     </div>
   );
 }

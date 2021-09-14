@@ -1,9 +1,9 @@
 function Score(props) {
   return (
     <>
-      {props.scoreObj.map(
-        scoreObj => `Date: ${scoreObj.date} -- Score: ${scoreObj.score} |`
-      )}
+      {props.scoreObj.map(scoreObj => (
+        <li>{`Date: ${scoreObj.date} -- Score: ${scoreObj.score}`}</li>
+      ))}
       <hr />
     </>
   );

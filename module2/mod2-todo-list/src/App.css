@@ -7,15 +7,6 @@
   pointer-events: none;
 }
 
-ul {
-  list-style: none;
-}
-
-.name {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

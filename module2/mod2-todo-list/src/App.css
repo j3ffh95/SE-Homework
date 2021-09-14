@@ -3,3 +3,10 @@
   width: 25vw;
   margin: auto;
 }
+
+li {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}

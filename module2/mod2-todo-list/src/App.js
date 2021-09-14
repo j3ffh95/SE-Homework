@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
 import Todo from "./Todo";
 import AddTodoForm from "./AddTodoForm";
 
@@ -15,7 +14,7 @@ function App() {
 
   // run every time our pet state changes
   useEffect(() => {
-    localStorage.setItem("examplePetData", JSON.stringify(todoItems));
+    localStorage.setItem("todoData", JSON.stringify(todoItems));
   }, [todoItems]);
 
   return (
@@ -24,14 +23,7 @@ function App() {
       <AddTodoForm setTodoItems={setTodoItems} />
       <ul>
         {todoItems.map(todo => (
-          <Todo
-            setTodoItems={setTodoItems}
-            id={todo.id}
-            item={todo.item}
-            // species={pet.species}
-            // age={pet.age}
-            // key={pet.id}
-          />
+          <Todo setTodoItems={setTodoItems} id={todo.id} item={todo.item} />
         ))}
       </ul>
     </div>

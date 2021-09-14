@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./App.css";
 import Todo from "./Todo";
 import AddTodoForm from "./AddTodoForm";
 
@@ -23,7 +24,12 @@ function App() {
       <AddTodoForm setTodoItems={setTodoItems} />
       <ul>
         {todoItems.map(todo => (
-          <Todo setTodoItems={setTodoItems} id={todo.id} item={todo.item} />
+          <Todo
+            setTodoItems={setTodoItems}
+            id={todo.id}
+            item={todo.item}
+            key={todo.id}
+          />
         ))}
       </ul>
     </div>

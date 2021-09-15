@@ -5,12 +5,12 @@ import Bath from "./Bath";
 
 function FloorPlan() {
   return (
-    <>
+    <div>
       <Kitchen />
       <LivingRoom />
       <Bedroom />
       <Bath />
-    </>
+    </div>
   );
 }
 

@@ -1,5 +1,5 @@
 function Oven() {
-  return <h2>Oven</h2>;
+  return <p className='oven'>Oven</p>;
 }
 
 export default Oven;

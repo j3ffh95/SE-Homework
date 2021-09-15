@@ -1,9 +1,9 @@
 import Oven from "./Oven";
 import Sink from "./Sink";
 
-function Kitchen() {
+function Kitchen(props) {
   return (
-    <div>
+    <div className={props.className}>
       <h2>Kitchen</h2>
       <Oven />
       <Sink />

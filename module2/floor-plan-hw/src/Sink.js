@@ -1,5 +1,5 @@
 function Sink() {
-  return <h2>Sink</h2>;
+  return <p className='sink'>Sink</p>;
 }
 
 export default Sink;

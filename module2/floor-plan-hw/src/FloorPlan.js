@@ -8,7 +8,7 @@ function FloorPlan() {
     <div>
       <Kitchen />
       <LivingRoom />
-      <Bedroom />
+      <Bedroom bedNum='1' />
       <Bath />
     </div>
   );

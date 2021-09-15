@@ -5,11 +5,14 @@ import Bath from "./Bath";
 
 function FloorPlan() {
   return (
-    <div>
-      <Kitchen />
-      <LivingRoom />
+    <div className='grid'>
       <Bedroom bedNum='1' />
-      <Bath />
+      <LivingRoom />
+      <Kitchen />
+      <Bath size='Full' />
+      <Bedroom bedNum='2' />
+      <Bath size='Half' />
+      <Bedroom bedNum='3' />
     </div>
   );
 }
